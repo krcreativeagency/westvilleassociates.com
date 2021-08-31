@@ -1,0 +1,11 @@
+@import "reset";
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import "variables";
+
+#root,
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: $font-family;
+}

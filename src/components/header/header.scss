@@ -1,0 +1,63 @@
+@import "../../scss/variables";
+
+header {
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: #fff;
+  .header-container {
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    column-gap: 2rem;
+    div.logo {
+      img {
+        width: 200px;
+      }
+    }
+    nav {
+      a {
+        border-bottom: 3px solid transparent;
+        padding-bottom: 1rem;
+        letter-spacing: 0.04rem;
+        margin-left: 2rem;
+        font-size: 1rem;
+        color: $color-primary;
+        cursor: pointer;
+        transition: all 0.5s;
+        font-weight: 600;
+        svg {
+          margin-right: 0.5rem;
+          display: inline-block;
+          color: rgba(0, 0, 0, 0.5);
+        }
+        &:hover {
+          border-color: $color-secondary;
+          svg {
+            color: $color-secondary;
+          }
+        }
+      }
+    }
+    div.navigation {
+      a {
+        transition: all 0.5s;
+        display: block;
+        background-color: $color-primary;
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 50%;
+        padding: 0.7rem;
+        box-sizing: border-box;
+        text-align: center;
+        svg {
+          color: #ffffff;
+        }
+        &:hover {
+          background-color: $color-secondary;
+        }
+      }
+    }
+  }
+}
