@@ -9,7 +9,7 @@ import ContractAdministration from "../../assets/images/services/contract-admini
 import PlannedMaintenanceProgrammes from "../../assets/images/services/planned-maintenance-programmes.jpg";
 
 const ServiceComponent = () => {
-  const [Services, SetServices] = useState([
+  const [Services] = useState([
     {
       name: "Party Wall Matters",
       slug: "party-wall-matters",

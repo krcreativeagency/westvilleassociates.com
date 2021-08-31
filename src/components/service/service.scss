@@ -19,13 +19,14 @@ section.service_component {
         background-position: center center;
       }
       article {
-        padding: 6rem 8rem;
+        padding: 12%;
         h1 {
           font-size: 1.5rem;
           font-weight: bolder;
           letter-spacing: 0.1rem;
           text-transform: uppercase;
           color: $color-primary;
+          line-height: 180%;
         }
         div.separator {
           background-color: $color-secondary;

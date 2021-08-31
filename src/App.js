@@ -7,18 +7,16 @@ import SliderComponent from "./components/slider/slider";
 
 import HomeComponent from "./components/home/home";
 import ServiceComponent from "./components/service/service";
+import ContactComponent from "./components/contact/contact";
 
 function App() {
   return (
     <BrowserRouter>
       <HeaderComponent />
-      <Switch>
-        <Route path="/" exact>
-          <SliderComponent />
-          <HomeComponent />
-          <ServiceComponent />
-        </Route>
-      </Switch>
+      <SliderComponent />
+      <HomeComponent />
+      <ServiceComponent />
+      <ContactComponent />
     </BrowserRouter>
   );
 }
