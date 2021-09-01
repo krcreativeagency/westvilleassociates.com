@@ -4,7 +4,7 @@ import { ContactDetailsComponent } from "../header/header";
 
 const ContactComponent = () => {
   return (
-    <section className="contact_component">
+    <section id="Contact" className="contact_component">
       <div className="container">
         <div className="content">
           <h1>Contact us</h1>
@@ -22,7 +22,7 @@ const ContactComponent = () => {
 
 const ContactForm = () => {
   return (
-    <form name="contactFrm" id="contactFrm" autocomplete="off" method="GET">
+    <form name="contactFrm" id="contactFrm" autoComplete="off" method="GET">
       <fieldset>
         <input type="text" id="full_name" name="full_name" placeholder="* Your full name" required />
       </fieldset>
@@ -33,7 +33,7 @@ const ContactForm = () => {
         <input type="tel" id="phone" name="phone" placeholder="* Your phone number" required />
       </fieldset>
       <fieldset>
-        <textarea id="message" name="message" placeholder="* Please write your requirements here." spellcheck="false" required></textarea>
+        <textarea id="message" name="message" placeholder="* Please write your requirements here." spellCheck="false" required></textarea>
       </fieldset>
       <fieldset>
         <label id="validation"></label>

@@ -39,6 +39,14 @@ section.service_component {
           font-size: 1.1rem;
           letter-spacing: 0.06rem;
           line-height: 2rem;
+          div.member {
+            display: grid;
+            grid-template-columns: 1fr 8rem;
+            column-gap: 5rem;
+            img {
+              width: 100%;
+            }
+          }
         }
       }
     }

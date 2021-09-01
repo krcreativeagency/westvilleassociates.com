@@ -8,7 +8,12 @@ import ProcurementAndTendering from "../../assets/images/services/procurement-an
 import ContractAdministration from "../../assets/images/services/contract-administration.jpg";
 import PlannedMaintenanceProgrammes from "../../assets/images/services/planned-maintenance-programmes.jpg";
 
+import fpws from "../../assets/images/fpws.gif";
+import { useParams } from "react-router-dom";
+
 const ServiceComponent = () => {
+  const { slug } = useParams();
+
   const [Services] = useState([
     {
       name: "Party Wall Matters",
@@ -23,6 +28,14 @@ const ServiceComponent = () => {
           <br />
           We offer a free, 15 minutes, no obligation consultation to discuss any concerns or questions you may have, and we are often thanked for
           simplifying the legal jargon used in the Act and explaining the obligations required of you in less technical terms.
+          <br />
+          <br />
+          <div className="member">
+            <div>We are members of the Faculty of Party Wall Surveyors</div>
+            <div>
+              <img src={fpws} alt="fpws" />
+            </div>
+          </div>
         </p>
       ),
     },
@@ -100,16 +113,27 @@ const ServiceComponent = () => {
   return (
     <section className="service_component">
       <div className="container">
-        {Services.map((service) => (
-          <div className="item">
-            <div className="background" style={{ backgroundImage: `url(${service.image})` }}></div>
-            <article>
-              <h1>{service.name}</h1>
-              <div className="separator"></div>
-              <p>{service.description}</p>
-            </article>
-          </div>
-        ))}
+        {slug
+          ? Services.filter((service) => service.slug === slug).map((service) => (
+              <div className="item">
+                <div className="background" style={{ backgroundImage: `url(${service.image})` }}></div>
+                <article>
+                  <h1>{service.name}</h1>
+                  <div className="separator"></div>
+                  <p>{service.description}</p>
+                </article>
+              </div>
+            ))
+          : Services.map((service) => (
+              <div className="item">
+                <div className="background" style={{ backgroundImage: `url(${service.image})` }}></div>
+                <article>
+                  <h1>{service.name}</h1>
+                  <div className="separator"></div>
+                  <p>{service.description}</p>
+                </article>
+              </div>
+            ))}
       </div>
     </section>
   );

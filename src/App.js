@@ -1,6 +1,6 @@
 import "./scss/app.scss";
 
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter as BrowserRouter, Switch, Route } from "react-router-dom";
 
 import HeaderComponent from "./components/header/header";
 import SliderComponent from "./components/slider/slider";
@@ -13,9 +13,18 @@ function App() {
   return (
     <BrowserRouter>
       <HeaderComponent />
-      <SliderComponent />
-      <HomeComponent />
-      <ServiceComponent />
+      <Switch>
+        <Route path="/" exact>
+          <SliderComponent />
+          <HomeComponent />
+        </Route>
+        <Route path="/service/:slug">
+          <ServiceComponent />
+        </Route>
+        <Route path="/service">
+          <ServiceComponent />
+        </Route>
+      </Switch>
       <ContactComponent />
     </BrowserRouter>
   );
