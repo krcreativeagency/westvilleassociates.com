@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/westvilleassociates.com/static/css/main.d5fdd82c.chunk.css",
-    "main.js": "/westvilleassociates.com/static/js/main.70919ec9.chunk.js",
-    "main.js.map": "/westvilleassociates.com/static/js/main.70919ec9.chunk.js.map",
+    "main.css": "/westvilleassociates.com/static/css/main.f8c838ef.chunk.css",
+    "main.js": "/westvilleassociates.com/static/js/main.08f46a82.chunk.js",
+    "main.js.map": "/westvilleassociates.com/static/js/main.08f46a82.chunk.js.map",
     "runtime-main.js": "/westvilleassociates.com/static/js/runtime-main.902fb823.js",
     "runtime-main.js.map": "/westvilleassociates.com/static/js/runtime-main.902fb823.js.map",
     "static/css/2.b57b7cfd.chunk.css": "/westvilleassociates.com/static/css/2.b57b7cfd.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.077cef42.chunk.js.map": "/westvilleassociates.com/static/js/3.077cef42.chunk.js.map",
     "index.html": "/westvilleassociates.com/index.html",
     "static/css/2.b57b7cfd.chunk.css.map": "/westvilleassociates.com/static/css/2.b57b7cfd.chunk.css.map",
-    "static/css/main.d5fdd82c.chunk.css.map": "/westvilleassociates.com/static/css/main.d5fdd82c.chunk.css.map",
+    "static/css/main.f8c838ef.chunk.css.map": "/westvilleassociates.com/static/css/main.f8c838ef.chunk.css.map",
     "static/js/2.e381efd7.chunk.js.LICENSE.txt": "/westvilleassociates.com/static/js/2.e381efd7.chunk.js.LICENSE.txt",
     "static/media/building-surveys.a953165b.jpg": "/westvilleassociates.com/static/media/building-surveys.a953165b.jpg",
     "static/media/contract-administration.abb563d1.jpg": "/westvilleassociates.com/static/media/contract-administration.abb563d1.jpg",
@@ -22,13 +22,15 @@
     "static/media/planned-maintenance-programmes.1abc2c80.jpg": "/westvilleassociates.com/static/media/planned-maintenance-programmes.1abc2c80.jpg",
     "static/media/procurement-and-tendering.63ea1f57.jpg": "/westvilleassociates.com/static/media/procurement-and-tendering.63ea1f57.jpg",
     "static/media/slide-1.1a1db02d.jpg": "/westvilleassociates.com/static/media/slide-1.1a1db02d.jpg",
-    "static/media/slide-2.e45ad2e7.jpg": "/westvilleassociates.com/static/media/slide-2.e45ad2e7.jpg"
+    "static/media/slide-2.e45ad2e7.jpg": "/westvilleassociates.com/static/media/slide-2.e45ad2e7.jpg",
+    "static/media/slide-3.2ca5f26c.jpg": "/westvilleassociates.com/static/media/slide-3.2ca5f26c.jpg",
+    "static/media/slide-4.fcc72e8f.jpg": "/westvilleassociates.com/static/media/slide-4.fcc72e8f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.902fb823.js",
     "static/css/2.b57b7cfd.chunk.css",
     "static/js/2.e381efd7.chunk.js",
-    "static/css/main.d5fdd82c.chunk.css",
-    "static/js/main.70919ec9.chunk.js"
+    "static/css/main.f8c838ef.chunk.css",
+    "static/js/main.08f46a82.chunk.js"
   ]
 }
