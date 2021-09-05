@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.7e0f85ff.chunk.css",
-    "main.js": "/static/js/main.8223f6bb.chunk.js",
-    "main.js.map": "/static/js/main.8223f6bb.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.922d81fd.js",
-    "runtime-main.js.map": "/static/js/runtime-main.922d81fd.js.map",
+    "main.css": "/static/css/main.2cf67af0.chunk.css",
+    "main.js": "/static/js/main.e1eabad9.chunk.js",
+    "main.js.map": "/static/js/main.e1eabad9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1047de35.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1047de35.js.map",
     "static/css/2.b57b7cfd.chunk.css": "/static/css/2.b57b7cfd.chunk.css",
-    "static/js/2.f661be0f.chunk.js": "/static/js/2.f661be0f.chunk.js",
-    "static/js/2.f661be0f.chunk.js.map": "/static/js/2.f661be0f.chunk.js.map",
-    "static/js/3.077cef42.chunk.js": "/static/js/3.077cef42.chunk.js",
-    "static/js/3.077cef42.chunk.js.map": "/static/js/3.077cef42.chunk.js.map",
+    "static/js/2.3023e4a5.chunk.js": "/static/js/2.3023e4a5.chunk.js",
+    "static/js/2.3023e4a5.chunk.js.map": "/static/js/2.3023e4a5.chunk.js.map",
+    "static/js/3.7da22455.chunk.js": "/static/js/3.7da22455.chunk.js",
+    "static/js/3.7da22455.chunk.js.map": "/static/js/3.7da22455.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.b57b7cfd.chunk.css.map": "/static/css/2.b57b7cfd.chunk.css.map",
-    "static/css/main.7e0f85ff.chunk.css.map": "/static/css/main.7e0f85ff.chunk.css.map",
-    "static/js/2.f661be0f.chunk.js.LICENSE.txt": "/static/js/2.f661be0f.chunk.js.LICENSE.txt",
+    "static/css/main.2cf67af0.chunk.css.map": "/static/css/main.2cf67af0.chunk.css.map",
+    "static/js/2.3023e4a5.chunk.js.LICENSE.txt": "/static/js/2.3023e4a5.chunk.js.LICENSE.txt",
     "static/media/building-surveys.a953165b.jpg": "/static/media/building-surveys.a953165b.jpg",
     "static/media/contract-administration.abb563d1.jpg": "/static/media/contract-administration.abb563d1.jpg",
     "static/media/defects-analysis.119a780f.jpg": "/static/media/defects-analysis.119a780f.jpg",
-    "static/media/logo.ba54aa57.jpg": "/static/media/logo.ba54aa57.jpg",
+    "static/media/logo.a9a596de.svg": "/static/media/logo.a9a596de.svg",
     "static/media/party-wall-matters.9c476e25.jpg": "/static/media/party-wall-matters.9c476e25.jpg",
     "static/media/planned-maintenance-programmes.1abc2c80.jpg": "/static/media/planned-maintenance-programmes.1abc2c80.jpg",
     "static/media/procurement-and-tendering.63ea1f57.jpg": "/static/media/procurement-and-tendering.63ea1f57.jpg",
@@ -27,10 +27,10 @@
     "static/media/slide-4.fcc72e8f.jpg": "/static/media/slide-4.fcc72e8f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.922d81fd.js",
+    "static/js/runtime-main.1047de35.js",
     "static/css/2.b57b7cfd.chunk.css",
-    "static/js/2.f661be0f.chunk.js",
-    "static/css/main.7e0f85ff.chunk.css",
-    "static/js/main.8223f6bb.chunk.js"
+    "static/js/2.3023e4a5.chunk.js",
+    "static/css/main.2cf67af0.chunk.css",
+    "static/js/main.e1eabad9.chunk.js"
   ]
 }
