@@ -39,14 +39,32 @@ section.service_component {
           font-size: 1.1rem;
           letter-spacing: 0.06rem;
           line-height: 2rem;
-          div.member {
-            display: grid;
-            grid-template-columns: 1fr 8rem;
-            column-gap: 5rem;
-            img {
-              width: 100%;
-            }
+          strong {
+            font-weight: 600;
           }
+        }
+        div.member {
+          margin-top: 3rem;
+          display: grid;
+          grid-template-columns: 1fr 8rem;
+          column-gap: 5rem;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 200px) and (max-width: 991px) {
+    div.container {
+      div.item {
+        display: block;
+
+        div.background {
+          height: 30rem;
+          width: 100%;
+          grid-column: 0;
+          grid-row: 1;
         }
       }
     }

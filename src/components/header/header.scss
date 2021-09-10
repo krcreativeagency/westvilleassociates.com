@@ -5,15 +5,15 @@ header {
   padding: 1.5rem 0;
   background-color: #fff;
   .header-container {
-    width: 75%;
+    width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr auto auto;
     align-items: center;
-    column-gap: 2rem;
+    column-gap: 3rem;
     div.logo {
       img {
-        width: 200px;
+        width: 250px;
       }
     }
     nav {
@@ -56,6 +56,45 @@ header {
         }
         &:hover {
           background-color: $color-secondary;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 200px) and (max-width: 991px) {
+    padding: 0;
+    .header-container {
+      width: 100%;
+      grid-template-columns: 1fr auto;
+      column-gap: 0;
+      div.logo {
+        padding: 1rem;
+        img {
+          width: 200px;
+        }
+      }
+      div.navigation {
+        padding: 2rem;
+        grid-column: 2;
+        grid-row: 1;
+      }
+      nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        margin: 0;
+        a {
+          padding: 1rem;
+          background-color: $color-secondary;
+          margin: 0;
+          border: none;
+          font-size: 0.8rem;
+          border-top: 1px solid $color-primary !important;
+          &:hover {
+            color: #fff;
+            background-color: $color-primary;
+          }
         }
       }
     }

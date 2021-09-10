@@ -1,19 +1,18 @@
+import { ContactDetailsComponent } from "../header/header";
+import { useState } from "react";
+import base from "../../airtable";
+
 import "./contact.scss";
 
-import { ContactDetailsComponent } from "../header/header";
-
-const ContactComponent = () => {
+const ContactComponent = ({ Contact, Email, Phone }) => {
   return (
-    <section id="Contact" className="contact_component">
-      <div className="container">
+    <section className="contact_component">
+      <div className="container" id="Contact">
         <div className="content">
           <h1>Contact us</h1>
-          <p>
-            If you need advice on your building project, no matter how big or small, we are here to help. As members of the Faculty of Party Wall
-            Surveyors, we can advise on all party wall matters and as experienced Building Surveyors, we offer a no obligation 15 minute consultation.
-          </p>
+          <p>{Contact}</p>
         </div>
-        <ContactDetailsComponent />
+        <ContactDetailsComponent Email={Email} Phone={Phone} />
         <ContactForm />
       </div>
     </section>
@@ -21,19 +20,68 @@ const ContactComponent = () => {
 };
 
 const ContactForm = () => {
+  const InitialState = {
+    full_name: "",
+    email: "",
+    phone: "",
+    message: "",
+  };
+
+  const [Contact, SetContact] = useState(InitialState);
+
+  const HandleSubmit = (e) => {
+    e.preventDefault();
+    base("contact").create(
+      [
+        {
+          fields: Contact,
+        },
+      ],
+      function (err, records) {
+        if (err) {
+          alert("Sorry an error occurred. Please try again later.");
+        }
+        if (records) {
+          alert("Your message has been sent. Thank you!");
+          SetContact(InitialState);
+        }
+      }
+    );
+  };
+
+  const HandleChange = (e) => {
+    SetContact({ ...Contact, [e.target.name]: e.target.value });
+  };
+
   return (
-    <form name="contactFrm" id="contactFrm" autoComplete="off" method="GET">
+    <form name="contactFrm" id="contactFrm" autoComplete="off" method="POST" onSubmit={HandleSubmit}>
       <fieldset>
-        <input type="text" id="full_name" name="full_name" placeholder="* Your full name" required />
+        <input
+          type="text"
+          id="full_name"
+          name="full_name"
+          placeholder="* Your full name"
+          required
+          value={Contact.full_name}
+          onChange={HandleChange}
+        />
       </fieldset>
       <fieldset>
-        <input type="email" id="email" name="email" placeholder="* Your Email address" required />
+        <input type="email" id="email" name="email" placeholder="* Your Email address" required value={Contact.email} onChange={HandleChange} />
       </fieldset>
       <fieldset>
-        <input type="tel" id="phone" name="phone" placeholder="* Your phone number" required />
+        <input type="tel" id="phone" name="phone" placeholder="* Your phone number" required value={Contact.phone} onChange={HandleChange} />
       </fieldset>
       <fieldset>
-        <textarea id="message" name="message" placeholder="* Please write your requirements here." spellCheck="false" required></textarea>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="* Please write your requirements here."
+          spellCheck="false"
+          required
+          onChange={HandleChange}
+          value={Contact.message}
+        />
       </fieldset>
       <fieldset>
         <label id="validation"></label>

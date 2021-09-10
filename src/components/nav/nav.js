@@ -12,11 +12,10 @@ const NavComponent = ({ action, setAction }) => {
     { name: "Procurement and Tendering", slug: "/service/procurement-and-tendering" },
     { name: "Contract Administration", slug: "/service/contract-administration" },
     { name: "Planned Maintenance Programmes", slug: "/service/planned-maintenance-programmes" },
-    { name: "Contact", slug: "#Contact" },
   ]);
 
   return (
-    <div className={`nav-wrapper ${action ? "open" : ""}`}>
+    <div className={`nav-wrapper animate__animated ${action ? "open animate__slideInLeft" : "close animate__slideOutLeft"}  `}>
       <nav>
         {Navigation.map((item, index) => (
           <NavLink
@@ -30,6 +29,14 @@ const NavComponent = ({ action, setAction }) => {
             {item.name}
           </NavLink>
         ))}
+        <a
+          href="#Contact"
+          onClick={() => {
+            setAction(false);
+          }}
+        >
+          Contact
+        </a>
       </nav>
     </div>
   );

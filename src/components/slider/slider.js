@@ -7,8 +7,8 @@ import SlideFour from "../../assets/images/slide-4.jpg";
 
 import "./slider.scss";
 
-const SliderComponent = () => {
-  return (
+const SliderComponent = ({ TagLine }) => {
+  return TagLine ? (
     <div className="slide-container">
       <Fade>
         {[SlideOne, SlideTwo, SlideThree, SlideFour].map((slide, index) => {
@@ -16,7 +16,7 @@ const SliderComponent = () => {
             <div key={index} className="each-fade">
               <div className="image-container">
                 <div className="image-container-inner">
-                  <h1>Building and Party Wall Surveyors</h1>
+                  <h1>{TagLine}</h1>
                 </div>
                 <img src={slide} alt="Westville Associates Service" />
               </div>
@@ -25,7 +25,7 @@ const SliderComponent = () => {
         })}
       </Fade>
     </div>
-  );
+  ) : null;
 };
 
 export default SliderComponent;

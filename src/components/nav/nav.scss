@@ -5,21 +5,24 @@ div.nav-wrapper {
   position: fixed;
   left: 0;
   height: 100%;
-  width: 100%;
+  width: 20rem;
   top: 0;
-  background-color: $color-primary;
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 100;
   align-items: center;
   &.open {
     display: grid !important;
   }
+  &.close {
+    display: none !important;
+  }
   nav {
     a {
-      font-size: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
       display: block;
-      text-align: center;
-      letter-spacing: 0.2rem;
-      line-height: 5rem;
+      line-height: 3rem;
       color: #ffffff;
       transition: all 0.3s ease-in-out;
       &:hover,
@@ -28,6 +31,14 @@ div.nav-wrapper {
       }
       &:last-child {
         background-color: $color-primary !important;
+      }
+    }
+  }
+  @media (min-width: 200px) and (max-width: 991px) {
+    width: 100%;
+    nav {
+      a {
+        padding: 0.1rem 2rem;
       }
     }
   }

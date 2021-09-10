@@ -1,4 +1,5 @@
 @import "reset";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 @import "variables";
 
@@ -36,4 +37,30 @@ html {
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 300ms, transform 300ms;
+}
+
+div.sb_Loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  background-color: $color-primary;
+  &.disabled {
+    display: none !important;
+  }
+  div.loading {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    svg {
+      color: #fff;
+      font-size: 3rem;
+      width: 3rem;
+      margin: auto;
+    }
+  }
 }
