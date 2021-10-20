@@ -9,6 +9,7 @@ import SliderComponent from "./components/slider/slider";
 import HomeComponent from "./components/home/home";
 import ServiceComponent from "./components/service/service";
 import ContactComponent from "./components/contact/contact";
+import PrivacyPolicyComponent from "./components/privacy-policy/privacy-policy";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -62,6 +63,9 @@ function App() {
                 Description={Home ? Home.filter((content) => content.name === "description")[0].description : null}
               />
             </section>
+          </Route>
+          <Route path="/privacy-policy">
+            <PrivacyPolicyComponent />
           </Route>
           <Route path="/service/:slug">
             <ServiceComponent Services={Service} />

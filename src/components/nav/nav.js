@@ -37,6 +37,15 @@ const NavComponent = ({ action, setAction }) => {
         >
           Contact
         </a>
+        <NavLink
+          exact
+          to="/privacy-policy"
+          onClick={() => {
+            setAction(false);
+          }}
+        >
+          Privacy policy
+        </NavLink>
       </nav>
     </div>
   );
