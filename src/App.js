@@ -50,17 +50,50 @@ function App() {
       </div>
       <BrowserRouter>
         <HeaderComponent
-          Phone={Home ? Home.filter((content) => content.name === "phone")[0].description : null}
-          Email={Home ? Home.filter((content) => content.name === "email")[0].description : null}
+          Phone={
+            Home
+              ? Home.filter((content) => content.name === "phone")[0]
+                  .description
+              : null
+          }
+          Email={
+            Home
+              ? Home.filter((content) => content.name === "email")[0]
+                  .description
+              : null
+          }
         />
         <Switch>
           <Route path="/" exact>
-            <SliderComponent TagLine={Home ? Home.filter((content) => content.name === "slide")[0].description : null} />
+            <SliderComponent
+              TagLine={
+                Home
+                  ? Home.filter((content) => content.name === "slide")[0]
+                      .description
+                  : null
+              }
+            />
             <section className="home_component">
               <HomeComponent
-                Heading1={Home ? Home.filter((content) => content.name === "heading1")[0].description : null}
-                Heading2={Home ? Home.filter((content) => content.name === "heading2")[0].description : null}
-                Description={Home ? Home.filter((content) => content.name === "description")[0].description : null}
+                Heading1={
+                  Home
+                    ? Home.filter((content) => content.name === "heading1")[0]
+                        .description
+                    : null
+                }
+                Heading2={
+                  Home
+                    ? Home.filter((content) => content.name === "heading2")[0]
+                        .description
+                    : null
+                }
+                Description={
+                  Home
+                    ? Home.filter(
+                        (content) => content.name === "description"
+                      )[0].description
+                    : null
+                }
               />
             </section>
           </Route>
@@ -75,9 +108,50 @@ function App() {
           </Route>
         </Switch>
         <ContactComponent
-          Contact={Home ? Home.filter((content) => content.name === "contact")[0].description : null}
-          Phone={Home ? Home.filter((content) => content.name === "phone")[0].description : null}
-          Email={Home ? Home.filter((content) => content.name === "email")[0].description : null}
+          Contact={
+            Home
+              ? Home.filter((content) => content.name === "contact")[0]
+                  .description
+              : null
+          }
+          Phone={
+            Home
+              ? Home.filter((content) => content.name === "phone")[0]
+                  .description
+              : null
+          }
+          Email={
+            Home
+              ? Home.filter((content) => content.name === "email")[0]
+                  .description
+              : null
+          }
+          Address_One_Heading={
+            Home
+              ? Home.filter(
+                  (content) => content.name === "address_one_heading"
+                )[0].description
+              : null
+          }
+          Address_Two_Heading={
+            Home
+              ? Home.filter(
+                  (content) => content.name === "address_two_heading"
+                )[0].description
+              : null
+          }
+          Address_One={
+            Home
+              ? Home.filter((content) => content.name === "address_one")[0]
+                  .description
+              : null
+          }
+          Address_Two={
+            Home
+              ? Home.filter((content) => content.name === "address_two")[0]
+                  .description
+              : null
+          }
         />
       </BrowserRouter>
     </>

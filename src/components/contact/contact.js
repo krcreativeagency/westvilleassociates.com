@@ -4,7 +4,15 @@ import base from "../../airtable";
 
 import "./contact.scss";
 
-const ContactComponent = ({ Contact, Email, Phone }) => {
+const ContactComponent = ({
+  Contact,
+  Email,
+  Phone,
+  Address_One_Heading,
+  Address_Two_Heading,
+  Address_One,
+  Address_Two,
+}) => {
   return (
     <section className="contact_component">
       <div className="container" id="Contact">
@@ -12,6 +20,24 @@ const ContactComponent = ({ Contact, Email, Phone }) => {
           <h1>Contact us</h1>
           <p>{Contact}</p>
         </div>
+        <nav className="addresses">
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <br />
+            <span>
+              <strong>{Address_One_Heading}</strong>
+              <br /> {Address_One}
+            </span>
+          </div>
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <br />
+            <span>
+              <strong>{Address_Two_Heading}</strong>
+              <br /> {Address_Two}
+            </span>
+          </div>
+        </nav>
         <ContactDetailsComponent Email={Email} Phone={Phone} />
         <ContactForm />
       </div>
@@ -54,7 +80,13 @@ const ContactForm = () => {
   };
 
   return (
-    <form name="contactFrm" id="contactFrm" autoComplete="off" method="POST" onSubmit={HandleSubmit}>
+    <form
+      name="contactFrm"
+      id="contactFrm"
+      autoComplete="off"
+      method="POST"
+      onSubmit={HandleSubmit}
+    >
       <fieldset>
         <input
           type="text"
@@ -67,10 +99,26 @@ const ContactForm = () => {
         />
       </fieldset>
       <fieldset>
-        <input type="email" id="email" name="email" placeholder="* Your Email address" required value={Contact.email} onChange={HandleChange} />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="* Your Email address"
+          required
+          value={Contact.email}
+          onChange={HandleChange}
+        />
       </fieldset>
       <fieldset>
-        <input type="tel" id="phone" name="phone" placeholder="* Your phone number" required value={Contact.phone} onChange={HandleChange} />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="* Your phone number"
+          required
+          value={Contact.phone}
+          onChange={HandleChange}
+        />
       </fieldset>
       <fieldset>
         <textarea

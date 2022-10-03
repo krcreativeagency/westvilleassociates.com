@@ -145,3 +145,22 @@ section.contact_component {
     }
   }
 }
+
+nav.addresses {
+  letter-spacing: 0.04rem;
+  margin-left: 2rem;
+  font-size: 1rem;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: auto auto;
+  line-height: 1.8rem;
+  svg {
+    margin-right: 0.5rem;
+    display: inline-block;
+    color: $color-secondary;
+    font-size: 2rem;
+  }
+  strong {
+    color: $color-secondary;
+  }
+}
